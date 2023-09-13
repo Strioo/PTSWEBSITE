@@ -1,0 +1,210 @@
+/* untuk keseluruhan halaman */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* bagian section */
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fcecdd;
+}
+/* membuat background bulat */
+section .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fea82f;
+  clip-path: circle(70% at right -20%);
+}
+/* bagian header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+/* logo */
+header .logo {
+  position: relative;
+  max-width: 200px;
+}
+/* navigation */
+header .navigation {
+  position: relative;
+  display: flex;
+  margin-right: 130px;
+}
+header .navigation li {
+  list-style: none;
+}
+header .navigation li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 18px;
+}
+header .navigation li :hover {
+  color: #ff6701;
+}
+/* untuk bagian isi nya */
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textbox {
+  position: relative;
+  max-width: 600px;
+  margin-right: 20px;
+}
+.content .textbox h2 {
+  color: black;
+  font-size: 3em;
+  margin-bottom: 10px;
+  line-height-step: 1.4em;
+  font-weight: 700;
+}
+.content .textbox p {
+  color: black;
+}
+.content .textbox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #fea82f;
+  color: black;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.content .textbox a:hover {
+  background-color: #ff6701;
+}
+/* untuk link media sosial */
+.medsos {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.medsos li {
+  list-style-type: none;
+}
+.medsos li a {
+  display: inline-block;
+  margin-left: 15px;
+  background: #fea82f;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.2s ease ease-in-out;
+}
+.medsos li a:hover {
+  background: #ff6701;
+  transform: translateY(-10px);
+}
+.medsos li a img {
+  filter: invert(1);
+  transform: scale(0.5);
+  width: 50px;
+  height: 50px;
+}
+
+/* css marquee brand */
+.imgbox marquee{
+  width: 250px;
+}
+
+.imgbox marquee img{
+  width: 350px;
+  height: 300px;
+}
+/* halaman keunggulan */
+.keunggulan {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
+.keunggulan .box-keunggulan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 50px;
+}
+.keunggulan .unggul .box-keunggulan .box {
+  width: 300px;
+  text-align: center;
+}
+i {
+  margin-left: 330px;
+}
+.box {
+  border: 1px solid black;
+  padding: 35px;
+  box-shadow: 5px 10px gray;
+  background-color: #ff6701;
+  width: 750px;
+}
+.box h2 {
+  text-align: center;
+}
+.box p {
+  font-size: 20px;
+  font-weight: 100;
+}
+.keunggulan h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 150px;
+}
+/* css tentang kami */
+.tentang {
+  display: flex;
+}
+.tentang h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 55px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+  margin-top: 60px;
+}
+.tentang p {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
